@@ -39,4 +39,19 @@ body {
     background-color: #3498db; /* Initial background color */
     transition: all 0.5s ease;
   }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+  }
+  
+  .profile img {
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
   
