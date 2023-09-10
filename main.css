@@ -54,4 +54,38 @@ body {
     width: 200px;
     border-radius: 50%;
   }
+
+  h1,
+h3,
+a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.myName {
+    text-align: center;
+    justify-content: center;
+    margin-top: 2px;
+} 
+
+#hover-el, .hover-el {
+    cursor: pointer;
+}
+
+  
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+} 
   
