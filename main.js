@@ -49,3 +49,34 @@ gsap.to('#background', {
       background.style.backgroundColor = bgColor;
     });
   });
+
+  function displayDateTime() {
+    // Get the current date and time
+    const currentDate = new Date();
+  
+    // Extract day of the week, hour, minute, and second
+    const dayOfWeek = currentDate.toLocaleDateString('en-US', {
+      weekday: 'long',
+    });
+  
+    // Create formatted strings
+    const formattedDayOfWeek = `${dayOfWeek}`;
+  
+    // Display the day of the week and time on the webpage
+    const dayOfWeekDiv = document.getElementById('dayOfWeek');
+  
+    dayOfWeekDiv.textContent = formattedDayOfWeek;
+  
+    const currentTimeInMilliseconds = Date.now();
+  
+    // Display the current time in UTC milliseconds on the webpage
+    const currentTimeDiv = document.getElementById('currentTimeInMilliseconds');
+  
+    currentTimeDiv.textContent = `Current UTC Time: ${currentTimeInMilliseconds}`;
+  }
+  
+  // Update the displayed date and time every second
+  setInterval(displayDateTime, 1000);
+  
+  // Initial call to displayDateTime fn
+  displayDateTime();
