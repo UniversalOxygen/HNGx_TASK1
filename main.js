@@ -42,3 +42,10 @@ gsap.to('#background', {
       });
     },
   });
+
+  hoverElements.forEach((element) => {
+    element.addEventListener('mouseover', () => {
+      const bgColor = getComputedStyle(element).color;
+      background.style.backgroundColor = bgColor;
+    });
+  });
