@@ -5,3 +5,38 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.836);
+    padding: 30px;
+    border-radius: 12px;
+    width: 50%;
+    max-width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3498db; /* Initial background color */
+    transition: all 0.5s ease;
+  }
+  
